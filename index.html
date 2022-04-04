@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Simple Starter</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+	<div class="topbar">
+		<div class="logo">
+			<img src="images/logoFull.svg" alt="logo">
+			Территория вкуса
+		</div>
+		<ul class="topbar-menu">
+			<li class="topbar-menu__item">
+				<a href="#" class="topbar-menu__link">Пицца</a>
+			</li>
+			<li class="topbar-menu__item">
+				<a href="#" class="topbar-menu__link">Роллы</a>
+			</li>
+			<li class="topbar-menu__item">
+				<a href="#" class="topbar-menu__link">Бизнес-ланчи</a>
+			</li>
+			<li class="topbar-menu__item">
+				<a href="#" class="topbar-menu__link">Закуски</a>
+			</li>
+			<li class="topbar-menu__item">
+				<a href="#" class="topbar-menu__link">Десерты</a>
+			</li>
+			<li class="topbar-menu__item">
+				<a href="#" class="topbar-menu__link">Напитки</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="bg-image"></div>
+
+	<div class="wrapper">
+		<header class="main-info">
+			<h1 class="main-info__title">Доставка свежей и горячей еды в течение  40 минут</h1>
+			<div class="main-info__aboutUs">
+				<div class="main-info__aboutUs__item"> <!--поправить, используя БЭМ нормально (main-info__item)-->
+					<img src="images/icons/time.png" alt="time">
+					Доставка с 10:00 до 19:00
+					<span>Время работы</span>
+				</div>
+				<div class="main-info__aboutUs__item"> <!--поправить, используя БЭМ нормально (main-info__item)-->
+					<img src="images/icons/location.png" alt="location">
+					ул. Горького, 126
+					<span>ближайшее кафе</span>
+				</div>
+				<div class="main-info__aboutUs__item"> <!--поправить, используя БЭМ нормально (main-info__item)-->
+					<img src="images/icons/phone.png" alt="phone">
+					8-800-100-20-20
+					<span>заказ по  телефону</span>
+				</div>
+			</div>
+			
+		</header>
+
+		<main>
+
+			<div class="lunch">
+
+				<h2 class="lunch__title">
+					Бизнес ланч
+				</h2>
+				<h6 class="lunch__time">заказ до 15:00</h6>
+				<div class="lunch__conteiner">
+					<div class="lunch__content">
+						<div class="lunch__content__item"> <!--поправить, используя БЭМ нормально (lunch__item)-->
+							<div class="lunch__content__item__type">На первое:</div> <!--поправить, используя БЭМ нормально (lunch__type)-->
+							Cуп-лапша, борщ, солянка, сырный крем-суп с грибами
+						</div>
+						<div class="lunch__content__item"> <!--поправить, используя БЭМ нормально (lunch__item)-->
+							<div class="lunch__content__item__type">На второе:</div> <!--поправить, используя БЭМ нормально (lunch__type)-->
+							Свиная  отбивная, паста с баклажанами,  стйек из семги, курица по-тайски, запечёный картофель, ризотто
+						</div>
+						<div class="lunch__content__item"> <!--поправить, используя БЭМ нормально (lunch__item)-->
+							<div class="lunch__content__item__type">Салаты:</div> <!--поправить, используя БЭМ нормально (lunch__type)-->
+							Фунцоза, цезарь, весенний, ананасовый
+						</div>
+						<div class="lunch__content__item"> <!--поправить, используя БЭМ нормально (lunch__item)-->
+							<div class="lunch__content__item__type">Напитки:</div> <!--поправить, используя БЭМ нормально (lunch__type)-->
+							Кофе, чай фруктовый, морс клюквенный, компот яблочно-вишневый
+						</div>
+					</div>
+					<img src="images/lunch_bg.png" alt="lunch">
+				</div>
+
+				<button type="button" class="button">Заказать</button>
+
+			</div>
+
+			<div class="features">
+				<div class="features__item">
+					<div class="features__image"><img src="images/icons/cake.svg" alt=""></div>
+					<h2 class="features__name">Семейные<br> праздники</h2>
+				</div>
+				<div class="features__item">
+					<div class="features__image"><img src="images/icons/kae.svg" alt=""></div>
+					<h2 class="features__name">Кейтеринг</h2>
+				</div>
+				<div class="features__item">
+					<div class="features__image"><img src="images/icons/corp.svg" alt=""></div>
+					<h2 class="features__name">Корпоративные<br> обеды</h2>
+				</div>
+			</div>
+
+			<div class="swiper-container">
+				<div class="swiper">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+					  <!-- Slides -->
+					  <div class="swiper-slide">
+						  <div class="swiper-slide__content">
+								<h2 class="swiper__title">Соберите<br> свою пиццу</h2>
+								<p class="swiper__text">Мы приготовим для Вас пиццу<br> с вашими любимыми игридиентами</p>
+								<button type="button" class="button">Заказать</button>
+						  </div>
+					  </div>
+					  <div class="swiper-slide">
+						<div class="swiper-slide__content">
+							  <h2 class="swiper__title">Соберите<br> свою пиццу</h2>
+							  <p class="swiper__text">Мы приготовим для Вас пиццу<br> с вашими любимыми игридиентами</p>
+							  <button type="button" class="button">Заказать</button>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide__content">
+							  <h2 class="swiper__title">Соберите<br> свою пиццу</h2>
+							  <p class="swiper__text">Мы приготовим для Вас пиццу<br> с вашими любимыми игридиентами</p>
+							  <button type="button" class="button">Заказать</button>
+						</div>
+					</div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+				  
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev"><img src="images/icons/prev-arrow.svg" alt=""></div>
+					<div class="swiper-button-next"><img src="images/icons/next-arrow.svg" alt=""></div>
+				  
+				  </div>
+			</div>
+
+
+			<h2 class="main-title calendar-title">Календарь мероприятий</h2>
+			<div class="calendar-container">
+				<div class="calendar-mobileIcon-container">
+					<div class="calendar-mobileIcon">
+						<img src="images/icons/calendar.svg" alt="calendar">
+						<span id="currentDate"></span>
+					</div>
+				</div>
+				<div class="calendar">
+					<div class="calendar__month">
+						<div class="prev"><img src="images/icons/calendar-left.svg" alt="left"></div>
+						<div class="calendar__date">
+							<div class="calendar__date__title">Январь</div>
+						</div>
+						<div class="next"><img src="images/icons/calendar-right.svg" alt="right"></div>
+					</div>
+					
+					<div class="weekdays">
+						<div>Пн</div>
+						<div>Вт</div>
+						<div>Ср</div>
+						<div>Чт</div>
+						<div>Пт</div>
+						<div>Сб</div>
+						<div>Вс</div>
+					</div>
+					<div class="days"></div>
+				</div>
+
+				<div class="events">
+					<a href="#">
+						<div class="event__item">
+							<span class="event__time">10:00</span>
+							<h3 class="event__title">Детский мастер-класс</h3>
+							<p class="event__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.distinctio nobis ullam praesentium minus qui nulla enim illo.</p>
+							<div class="event__info">
+								<div class="event__info__icon"> <!--поправить, используя БЭМ нормально (event__icon)-->
+									<img src="images/icons/view.svg" alt="views">
+									<span class="event__info__views__number">275</span> <!--поправить, используя БЭМ нормально (event__views)-->
+								</div>
+								<div class="event__info__icon"> <!--поправить, используя БЭМ нормально (event__icon)-->
+									<img src="images/icons/comment.svg" alt="comments">
+									<span class="event__info__views__comments">12</span> <!--поправить, используя БЭМ нормально (event__views)-->
+								</div>
+							</div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="event__item" style="background-image: url(/images/calendar-photo.png);">
+							<span class="event__time">10:00</span>
+							<h3 class="event__title">Детский мастер-класс</h3>
+							<p class="event__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.distinctio nobis ullam praesentium minus qui nulla enim illo.</p>
+							<div class="event__info">
+								<div class="event__info__icon"> <!--поправить, используя БЭМ нормально (event__icon)-->
+									<img src="images/icons/view.svg" alt="views">
+									<span class="event__info__views__number">275</span> <!--поправить, используя БЭМ нормально (event__views)-->
+								</div>
+								<div class="event__info__icon"> <!--поправить, используя БЭМ нормально (event__icon)-->
+									<img src="images/icons/comment.svg" alt="comments">
+									<span class="event__info__views__comments">12</span> <!--поправить, используя БЭМ нормально (event__views)-->
+								</div>
+							</div>
+						</div>
+					</a>
+
+					<div class="event-link"><a href="#">Все ближайшие события >></a></div>
+				</div>
+			</div>
+
+			<h2 class="main-title">Лучшие повара этого месяца</h2>
+			<div class="workers">
+				<div class="workers__item">
+					<img src="images/Avatar_1.png" alt="alt" class="workers__avatar">
+					<div class="workers__name">
+						Григорий Ковалёв <br>
+						<span>Шеф холодного цеха</span>
+					</div>
+				</div>
+				<div class="workers__item">
+					<img src="images/Avatar_2.png" alt="alt" class="workers__avatar">
+					<div class="workers__name">
+						Григорий Ковалёв <br>
+						<span>Шеф холодного цеха</span>
+					</div>
+				</div>
+				<div class="workers__item">
+					<img src="images/Avatar_3.png" alt="alt" class="workers__avatar">
+					<div class="workers__name">
+						Григорий Ковалёв <br>
+						<span>Шеф холодного цеха</span>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="main-title">Популярные десерты</h2>
+
+			<div class="deserts">
+				<div class="deserts__item"> <!--поправить, используя БЭМ нормально. Тут и где-то выше лучше использовать .deserts-item > .deserts-item__content ?! -->
+					<img src="images/deserts/desert-1.png" alt="">
+					<div class="deserts__item__content">
+						<h3 class="deserts__title">Шоколадный десерт с овсянкой</h3>
+						<p class="deserts__text">Две мясных котлеты гриль, Специальный соус, сыр, Огурцы, салат и лук, Огурцы, салат и лук. Всё на булачке с кунжутом,</p>
+						<div class="deserts__price">
+							<span>165 ₽</span>
+							<button class="button" type="button">В корзину</button>
+						</div>
+					</div>
+				</div>
+				<div class="deserts__item">
+					<img src="images/deserts/desert-2.png" alt="">
+					<div class="deserts__item__content">
+						<h3 class="deserts__title">Шоколадный десерт с овсянкой</h3>
+						<p class="deserts__text">Две мясных котлеты гриль, Специальный соус, сыр, Огурцы, салат и лук, Огурцы, салат и лук. Всё на булачке с кунжутом,</p>
+						<div class="deserts__price">
+							<span>165 ₽</span>
+							<button class="button" type="button">В корзину</button>
+						</div>
+					</div>
+				</div>
+				<div class="deserts__item">
+					<img src="images/deserts/desert-3.png" alt="">
+					<div class="deserts__item__content">
+						<h3 class="deserts__title">Шоколадный десерт с овсянкой</h3>
+						<p class="deserts__text">Две мясных котлеты гриль, Специальный соус, сыр, Огурцы, салат и лук, Огурцы, салат и лук. Всё на булачке с кунжутом,</p>
+						<div class="deserts__price">
+							<span>165 ₽</span>
+							<button class="button" type="button">В корзину</button>
+						</div>
+					</div>
+				</div>
+				<div class="deserts__item">
+					<img src="images/deserts/desert-4.png" alt="">
+					<div class="deserts__item__content">
+						<h3 class="deserts__title">Шоколадный десерт с овсянкой</h3>
+						<p class="deserts__text">Две мясных котлеты гриль, Специальный соус, сыр, Огурцы, салат и лук, Огурцы, салат и лук. Всё на булачке с кунжутом,</p>
+						<div class="deserts__price">
+							<span>165 ₽</span>
+							<button class="button" type="button">В корзину</button>
+						</div>
+					</div>
+				</div>
+				<div class="deserts__item">
+					<img src="images/deserts/desert-5.png" alt="">
+					<div class="deserts__item__content">
+						<h3 class="deserts__title">Шоколадный десерт с овсянкой</h3>
+						<p class="deserts__text">Две мясных котлеты гриль, Специальный соус, сыр, Огурцы, салат и лук, Огурцы, салат и лук. Всё на булачке с кунжутом,</p>
+						<div class="deserts__price">
+							<span>165 ₽</span>
+							<button class="button" type="button">В корзину</button>
+						</div>
+					</div>
+				</div>
+				<div class="deserts__item">
+					<img src="images/deserts/desert-6.png" alt="">
+					<div class="deserts__item__content">
+						<h3 class="deserts__title">Шоколадный десерт с овсянкой</h3>
+						<p class="deserts__text">Две мясных котлеты гриль, Специальный соус, сыр, Огурцы, салат и лук, Огурцы, салат и лук. Всё на булачке с кунжутом,</p>
+						<div class="deserts__price">
+							<span>165 ₽</span>
+							<button class="button" type="button">В корзину</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="main-title">Отзывы</h2>
+			<div class="reviews">
+				<div class="reviews__item">
+					<div class="reviews__title">
+						<div class="reviews__title__name">@DennisFerguson</div>
+						<div class="reviews__title__date">24 Июн 2019 16:20</div>
+					</div>
+					<div class="reviews__score">
+						<span class="active">☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span><span>☆</span>
+					</div>
+					<div class="reviews__text">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem quasi eligendi quo libero minima, numquam officia amet, exercitationem quaerat repudiandae aspernatur atque perferendis sunt harum dolores soluta quidem quod praesentium!
+						Magni eos ea repellat ipsa voluptatibus accusantium, laudantium cumque ab sunt officia commodi perspiciatis soluta dolorum tenetur, iure laboriosam asperiores sapiente dolores eveniet harum, quia quam nesciunt! Aspernatur, nemo quas.
+						Eius fugiat nemo omnis quidem velit ratione aspernatur incidunt cumque quod iure voluptate a repellendus ut veniam adipisci temporibus, vitae numquam ea? Qui eligendi distinctio unde omnis dignissimos rerum quae.
+						Libero debitis obcaecati quas aspernatur praesentium animi enim iste voluptate magnam delectus, autem fugit. Sed, voluptates architecto, aliquid aperiam voluptas dignissimos magnam facilis voluptatum, ipsum commodi labore pariatur quis iste?
+					</div>
+				</div>
+				<div class="reviews__item">
+					<div class="reviews__title">
+						<div class="reviews__title__name">@DennisFerguson</div>
+						<div class="reviews__title__date">24 Июн 2019 16:20</div>
+					</div>
+					<div class="reviews__score">
+						<span class="active">☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span><span>☆</span>
+					</div>
+					<div class="reviews__text">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem quasi eligendi quo libero minima, numquam officia amet, exercitationem quaerat repudiandae aspernatur atque perferendis sunt harum dolores soluta quidem quod praesentium!
+						Magni eos ea repellat ipsa voluptatibus accusantium, laudantium cumque ab sunt officia commodi perspiciatis soluta dolorum tenetur, iure laboriosam asperiores sapiente dolores eveniet harum, quia quam nesciunt! Aspernatur, nemo quas.
+						Eius fugiat nemo omnis quidem velit ratione aspernatur incidunt cumque quod iure voluptate a repellendus ut veniam adipisci temporibus, vitae numquam ea? Qui eligendi distinctio unde omnis dignissimos rerum quae.
+						Libero debitis obcaecati quas aspernatur praesentium animi enim iste voluptate magnam delectus, autem fugit. Sed, voluptates architecto, aliquid aperiam voluptas dignissimos magnam facilis voluptatum, ipsum commodi labore pariatur quis iste?
+					</div>
+				</div>
+				<div class="reviews__item">
+					<div class="reviews__title">
+						<div class="reviews__title__name">@DennisFerguson</div>
+						<div class="reviews__title__date">24 Июн 2019 16:20</div>
+					</div>
+					<div class="reviews__score">
+						<span class="active">☆</span><span class="active">☆</span><span class="active">☆</span><span class="active">☆</span><span>☆</span>
+					</div>
+					<div class="reviews__text">
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem quasi eligendi quo libero minima, numquam officia amet, exercitationem quaerat repudiandae aspernatur atque perferendis sunt harum dolores soluta quidem quod praesentium!
+						Magni eos ea repellat ipsa voluptatibus accusantium, laudantium cumque ab sunt officia commodi perspiciatis soluta dolorum tenetur, iure laboriosam asperiores sapiente dolores eveniet harum, quia quam nesciunt! Aspernatur, nemo quas.
+						Eius fugiat nemo omnis quidem velit ratione aspernatur incidunt cumque quod iure voluptate a repellendus ut veniam adipisci temporibus, vitae numquam ea? Qui eligendi distinctio unde omnis dignissimos rerum quae.
+						Libero debitis obcaecati quas aspernatur praesentium animi enim iste voluptate magnam delectus, autem fugit. Sed, voluptates architecto, aliquid aperiam voluptas dignissimos magnam facilis voluptatum, ipsum commodi labore pariatur quis iste?
+					</div>
+				</div>
+			</div>
+
+			<h2 class="main-title">Контакты</h2>
+			<div class="contacts">
+
+				<div class="contacts__info">
+					<div class="contacts__info__item">
+						<img src="images/icons/contact__mail.svg" alt="alt"> hello@mymeal.ru
+					</div>
+					<div class="contacts__info__item">
+						<img src="images/icons/contact__location.svg" alt="alt"> @mymeal
+					</div>
+					<div class="contacts__info__item">
+						<img src="images/icons/contact__phone.svg" alt="alt"> +7 (938)833 24 15
+					</div>
+				</div>
+
+				<form class="contacts__form">
+					<div class="contacts__form_inputs">
+						<input type="text" class="contacts__input" placeholder="Ваше имя" id="name" required>
+						<input type="tel" class="contacts__input" placeholder="Номер телефона" id="phone" required>
+					</div>
+					<textarea class="contacts__input" name="message" id="message" placeholder="Сообщение"></textarea>
+					<button type="submit" id="submit" class="button">заказать</button>
+				</form>
+
+			</div>
+
+		</main>
+
+	</div>
+
+	<footer>
+		<div class="logo">
+			<img src="images/logoFull.svg" alt="logo">
+			Территория вкуса
+		</div>
+
+		<nav>
+			<ul class="footer-menu">
+				<li class="footer-menu__item"><a href="#" class="footer-menu__link">О нас</a></li>
+				<li class="footer-menu__item"><a href="#" class="footer-menu__link">Меню</a></li>
+				<li class="footer-menu__item"><a href="#" class="footer-menu__link">Доставка</a></li>
+				<li class="footer-menu__item"><a href="#" class="footer-menu__link">Оплата</a></li>
+				<li class="footer-menu__item"><a href="#" class="footer-menu__link">Франшиза</a></li>
+				<li class="footer-menu__item"><a href="#" class="footer-menu__link">Вакансии</a></li>
+			</ul>
+		</nav>
+		<div class="footer-socials">
+			<a href="#" class="footer-socials__item"><img src="images/icons/socials/instagram.svg" alt="alt"></a>
+			<a href="#" class="footer-socials__item"><img src="images/icons/socials/facebook.svg" alt="alt"></a>
+			<a href="#" class="footer-socials__item"><img src="images/icons/socials/twitter.svg" alt="alt"></a>
+			<a href="#" class="footer-socials__item"><img src="images/icons/socials/whatsup.svg" alt="alt"></a>
+		</div>
+	</footer>
+
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

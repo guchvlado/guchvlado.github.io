@@ -1,481 +1,561 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
-</head>
-<body>
-
-    <section id="up" class="promo">
-        <div class="container">
-            <header class="header">
-                <a href="#" class="header__logo">
-                    <img src="img/logo.png" alt="logo">
-                </a>
-                <div class="header__official">
-                    Официальный представитель
-                    <span>Garmin, Polar, Suunto</span>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Global Opt</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="stylesheet" href="styles/main.min.css">
+    </head>
+    <body>
+        <header class="promo">
+    <div class="side-menu">
+        <div class="side-menu__block">
+            <div class="side-menu__close">&times;</div>
+            <nav class="side-menu__content">
+                <ul class="side-menu__list">
+                    <li class="side-menu__item"><a href="#" class="side-menu__link">Преимущества</a></li>
+                    <li class="side-menu__item"><a href="#" class="side-menu__link">Наша работа</a></li>
+                    <li class="side-menu__item"><a href="#" class="side-menu__link">Цены</a></li>
+                    <li class="side-menu__item"><a href="#" class="side-menu__link">Схема работы</a></li>
+                    <li class="side-menu__item"><a href="#" class="side-menu__link">Отзывы</a></li>
+                    <li class="side-menu__item"><a href="#" class="side-menu__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="side-menu__overlay"></div>
+    </div>
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="container">
+        <div class="promo__topbar">
+            <a href="#" class="promo__logo">
+                <picture>
+                    <source type="image/webp" srcset="img/promo/logo.webp">
+                    <img src="img/promo/logo.png" alt="logo">
+                </picture>
+            </a>
+            <nav class="promo__menu">
+                <ul class="promo__menu-list">
+                    <li class="promo__menu-item"><a href="#advantages" class="promo__menu-link">Преимущества</a></li>
+                    <li class="promo__menu-item"><a href="#ourWork" class="promo__menu-link">Наша работа</a></li>
+                    <li class="promo__menu-item"><a href="#price" class="promo__menu-link">Цены</a></li>
+                    <li class="promo__menu-item"><a href="#scheme" class="promo__menu-link">Схема работы</a></li>
+                    <li class="promo__menu-item"><a href="#reviews" class="promo__menu-link">Отзывы</a></li>
+                    <li class="promo__menu-item"><a href="#contacts" class="promo__menu-link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="promo__contact">
+                <div class="promo__phone">
+                    Есть вопросы?
+                    <a href="tel:+79264230100">+7 (926) 423 01 00</a>
                 </div>
-                <div class="header__contacts">
-                    <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                    <button data-modal="consultation" class="button">Заказать звонок</button>
-                </div>
-            </header>
-
-            <div class="promo__wrapper">
-                <h1 class="promo__header">Подбор пульсометра</h1>
-                <h2 class="promo__subheader">C учётом Вашего уровня подготовки</h2>
-                <div class="promo__icons">
-                    <div class="promo__icon">
-                        <img src="icons/promo/timer.png" alt="timer">
-                        Время подбора:
-                        10 минут
-                    </div>
-                    <div class="promo__icon">
-                        <img src="icons/promo/cart.png" alt="cart">
-                        Бесплатная
-                        доставка
-                    </div>
-                    <div class="promo__icon">
-                        <img src="icons/promo/messages.png" alt="messages">
-                        Ответим
-                        на все вопросы
-                    </div>
-                </div>
-                <button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
-                <div class="promo__link">
-                    или
-                    <a href="#">ПЕРЕЙТИ В КАТАЛОГ</a>
-                </div>
+                <button class="button promo__button">Перезвоните мне</button>
             </div>
         </div>
-    </section>
 
-    <section class="advantages">
-        <div class="container">
-            <h2 class="title">НАШИ ПРЕИМУЩЕСТВА</h2>
-            <div class="advantages__wrapper">
-                <div class="advantages__item">
-                    <img src="icons/advantages/cup.png" alt="cup">
-                    <h3 class="advantages__subtitle">Делимся опытом</h3>
-                    <p class="advantages__text">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</p>
+        <h2 class="promo__companytitle">Global Opt - логистика полного цикла из Китая в Россию</h2>
+        <h1 class="promo__title">ДОСТАВКА ГРУЗОВ ИЗ КИТАЯ</h1>
+        <h3 class="promo__subtitle">В РОССИЮ И СНГ ВСЕМИ ВИДАМИ ТРАНСПОРТА</h3>
+        <div class="promo__line"></div>
+
+        <div class="promo__about">
+            <div class="promo__about-item">
+                <div class="promo__about-img">
+                    <picture>
+                        <source type="image/webp" srcset="img/promo/promo_1.webp">
+                        <img src="img/promo/promo_1.png" alt="big">
+                    </picture>
                 </div>
-                <div class="advantages__item">
-                    <img src="icons/advantages/heart.png" alt="heart" class="advantages__heart">
-                    <h3 class="advantages__subtitle">Заботимся о здоровье</h3>
-                    <p class="advantages__text">Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</p>
+                <div class="promo__about-text">Перевозка негабаритных и крупнотоннажных грузов</div>
+            </div>
+            <div class="promo__about-item">
+                <div class="promo__about-img">
+                    <picture>
+                        <source type="image/webp" srcset="img/promo/promo_2.webp">
+                        <img src="img/promo/promo_2.png" alt="declaration">
+                    </picture>
                 </div>
-                <div class="advantages__item">
-                    <img src="icons/advantages/shoe.png" alt="shoe">
-                    <h3 class="advantages__subtitle">Учим бегать</h3>
-                    <p class="advantages__text">Помогаем с обучением правильной технике бега! Дружим с крупнейшей школой бега в России - <a href="#">I LOVE RUNNING</a>.</p>
+                <div class="promo__about-text">Самостоятельно декларируем и проводим таможенную очистку с оптимизацией кодов и ставок</div>
+            </div>
+            <div class="promo__about-item">
+                <div class="promo__about-img">
+                    <picture>
+                        <source type="image/webp" srcset="img/promo/promo_3.webp">
+                        <img src="img/promo/promo_3.png" alt="delivery">
+                    </picture>
                 </div>
+                <div class="promo__about-text">Осуществляем прямые поставки с заводов от двери до двери</div>
+            </div>
+            <div class="promo__about-item">
+                <div class="promo__about-img">
+                    <picture>
+                        <source type="image/webp" srcset="img/promo/promo_4.webp">
+                        <img src="img/promo/promo_4.png" alt="express">
+                    </picture>
+                </div>
+                <div class="promo__about-text">Экспресс доставка 1-2 дня из Гуанчжоу в Москву от 25$/кг</div>
             </div>
         </div>
-    </section>
-    
-    <section class="consultation">
-        <div class="container">
-            <h2 class="title title_left">Получите бесплатную консультацию<br>по подбору пульсометра </h2>
-            <h3 class="consultation__subheader">Просто заполните форму заявки <br>и мы перезвоним вам в течении 10 минут</h3>
-            <form action="#" class="feed-form">
-                <input required name="name" type="text" placeholder="Ваше имя">
-                <input required name="phone" type="tel" placeholder="Ваш телефон">
-                <input required name="email" type="email" placeholder="Ваше E-mail">
-                <button class="button button_submit">Заказать консультацию</button>
-            </form>
-        </div>
-    </section>
+        <button class="button promo__submit">Получить расчет</button>
+    </div>
+</header>
 
-    <div class="slider">
-        <div class="container">
-            <button type="button" class="swiper-prev"><img src="icons/left.svg" alt=""></button>
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="img/slide_1.png" alt="slide_1"></div>
-                    <div class="swiper-slide"><img src="img/slide_2.png" alt="slide_1"></div>
-                    <div class="swiper-slide"><img src="img/slide_3.png" alt="slide_1"></div>
+        <section class="advantages" id="advantages">
+    <div class="container">
+        <h2 class="title">Преимущества работы с GlobalOpt</h2>
+
+        <div class="advantages__content">
+            <div class="advantages__item">
+                <div class="advantages__img">
+                    <picture>
+                        <source type="image/webp" srcset="img/advantages/advantages_1.webp">
+                        <img src="img/advantages/advantages_1.png" alt="office">
+                    </picture>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="advantages__block">
+                    <h3 class="advantages__name">Офисы в Китае и России</h3>
+                    <p class="advantages__text">Офисы расположены в Москве, столице России.  И в Гуанчжоу, мировом торговом мегаполисе Китая.</p>
+                </div>
             </div>
-            <button type="button" class="swiper-next"><img src="icons/right.svg" alt=""></button>
+            <div class="advantages__item">
+                <div class="advantages__img">
+                    <picture>
+                        <source type="image/webp" srcset="img/advantages/advantages_2.webp">
+                        <img src="img/advantages/advantages_2.png" alt="declaration">
+                    </picture>
+                </div>
+                <div class="advantages__block">
+                    <h3 class="advantages__name">Декларируем груз с оптимизацией</h3>
+                    <p class="advantages__text">Идем на встречу своим клиентам и помогаем растаможить груз с оптимизацией кодов и ставок.</p>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__img">
+                    <picture>
+                        <source type="image/webp" srcset="img/advantages/advantages_3.webp">
+                        <img src="img/advantages/advantages_3.png" alt="stuff">
+                    </picture>
+                </div>
+                <div class="advantages__block">
+                    <h3 class="advantages__name">Квалифицированные кадры</h3>
+                    <p class="advantages__text">Наши сотрудники имеют большой опыт в логистике с Китаем и в совершенстве владеют китайским и английским языками.</p>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__img">
+                    <picture>
+                        <source type="image/webp" srcset="img/advantages/advantages_4.webp">
+                        <img src="img/advantages/advantages_4.png" alt="search">
+                    </picture>
+                </div>
+                <div class="advantages__block">
+                    <h3 class="advantages__name">Осуществляем поиск производителей</h3>
+                    <p class="advantages__text">Помогаем нашим клиентам найти интересующий вас товар или производителя в Китае.</p>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__img">
+                    <picture>
+                        <source type="image/webp" srcset="img/advantages/advantages_5.webp">
+                        <img src="img/advantages/advantages_5.png" alt="stock">
+                    </picture>
+                </div>
+                <div class="advantages__block">
+                    <h3 class="advantages__name">Собственный склад в Китае</h3>
+                    <p class="advantages__text">Свой склад в Китае, позволяет собирать и проверять и упаковывать  ваши товары, перед отправкой.</p>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__img">
+                    <picture>
+                        <source type="image/webp" srcset="img/advantages/advantages_6.webp">
+                        <img src="img/advantages/advantages_6.png" alt="money">
+                    </picture>
+                </div>
+                <div class="advantages__block">
+                    <h3 class="advantages__name">Перевод денег в Китай</h3>
+                    <p class="advantages__text">Помогаем переводить и оплачивать товар в Китае на льготных условиях</p>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__img">
+                    <picture>
+                        <source type="image/webp" srcset="img/advantages/advantages_7.webp">
+                        <img src="img/advantages/advantages_7.png" alt="opt">
+                    </picture>
+                </div>
+                <div class="advantages__block">
+                    <h3 class="advantages__name">Делаем оптовые поставки под ключ</h3>
+                    <p class="advantages__text">Берём на себя все заботы связанные с  закупкой, проверкой на качество, логистикой и растаможкой. От вас требуется лишь заполнить техническое задание, одобрить  образцы товаров и после принять товар на своём складе!</p>
+                </div>
+            </div>
+            <div class="advantages__item">
+                <div class="advantages__img">
+                    <picture>
+                        <source type="image/webp" srcset="img/advantages/advantages_8.webp">
+                        <img src="img/advantages/advantages_8.png" alt="travel">
+                    </picture>
+                </div>
+                <div class="advantages__block">
+                    <h3 class="advantages__name">Поездка на производство в Китай</h3>
+                    <p class="advantages__text">У нас большой опыт в бизнес поездках по Китаю. Мы с большой радостью и желанием организуем вам такую поездку в Китай под ключ. Сделаем визу, трансфер из аэропорта, забронируем отель, предоставим переводчика. Организуем поездку на производство. Шоп тур. Мебельный тур.</p>
+                </div>
+            </div>
         </div>
     </div>
+</section>
 
-    <section class="catalog">
-        <div class="container">
-            <h2 class="title">Каталог пульсометров</h2>
-            <ul class="catalog__tabs">
-                <li data-tab-to="1" class="catalog__tab catalog__tab_active"><div>Для фитнеса</div></li>
-                <li data-tab-to="2" class="catalog__tab"><div>для бега</div></li>
-                <li data-tab-to="3" class="catalog__tab"><div>для триатлона</div></li>
-            </ul>
-
-            <div data-tab="1" class="catalog__content catalog__content_active">
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <div class="catalog-item__list">
-                            <ul>
-                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            </ul>
-                            <a href="#" class="catalog-item__link">НАЗАД</a>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_catalog">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Suunto M2</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <div class="catalog-item__list">
-                            <ul>
-                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            </ul>
-                            <a href="#" class="catalog-item__link">НАЗАД</a>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_catalog">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <div class="catalog-item__list">
-                            <ul>
-                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            </ul>
-                            <a href="#" class="catalog-item__link">НАЗАД</a>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_catalog">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <div class="catalog-item__list">
-                            <ul>
-                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            </ul>
-                            <a href="#" class="catalog-item__link">НАЗАД</a>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_catalog">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <div class="catalog-item__list">
-                            <ul>
-                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            </ul>
-                            <a href="#" class="catalog-item__link">НАЗАД</a>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_catalog">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <div class="catalog-item__list">
-                            <ul>
-                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            </ul>
-                            <a href="#" class="catalog-item__link">НАЗАД</a>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_catalog">КУПИТЬ</button>
-                    </div>
-                </div>
-
+        <section class="ourWork" id="ourWork">
+    <div class="container">
+        <h2 class="title">Наша работа - больше чем просто доставка</h2>
+        <div class="divider"></div>
+        <h3 class="ourWork__subtitle">Мы организуем перевозки из Китая - оперативно и надежно, с учетом особенностей груза
+            и ваших требований по срокам и бюджету.</h3>
+        <div class="ourWork__content">
+            <div class="ourWork__item">
+                <picture>
+                    <source type="image/webp" srcset="img/ourWork/ourWork_1.webp">
+                    <img src="img/ourWork/ourWork_1.png" alt="insurance">
+                </picture>
+                <h4 class="ourWork__name">Страховка груза</h4>
+                <p class="ourWork__text">Все грузы, логистику которых осуществляет Global Opt, застрахованы. Мы гарантируем полное возмещение стоимости груза в случаях, предусмотренных страхо- вым соглашением. Все ваши тревоги наша компания берет на себя.</p>
             </div>
-            <div data-tab="2" class="catalog__content">
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <div class="catalog-item__list">
-                            <ul>
-                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            </ul>
-                            <a href="#" class="catalog-item__link">НАЗАД</a>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_catalog">КУПИТЬ</button>
-                    </div>
-                </div>
+            <div class="ourWork__item">
+                <picture>
+                    <source type="image/webp" srcset="img/ourWork/ourWork_2.webp">
+                    <img src="img/ourWork/ourWork_2.png" alt="logistic">
+                </picture>
+                <h4 class="ourWork__name">Логистика последней мили</h4>
+                <p class="ourWork__text">Мы осуществляем доставку вашего груза до конкретного адреса. Привоз согласовывается менед- жерами по телефону, предварительно за сутки и за час до доставки. Также мы предоставляем услуги грузчи- ков по месту доставки груза.</p>
             </div>
-            <div data-tab="3" class="catalog__content">
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <div class="catalog-item__list">
-                            <ul>
-                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            </ul>
-                            <a href="#" class="catalog-item__link">НАЗАД</a>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_catalog">КУПИТЬ</button>
-                    </div>
-                </div>
-                <div class="catalog-item">
-                    <div class="catalog-item__wrapper">
-                        <div class="catalog-item__content catalog-item__content_active">
-                            <img src="img/pulsometr.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
-                            <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
-                            <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
-                        </div>
-                        <div class="catalog-item__list">
-                            <ul>
-                                <li>Вы услышите звуковое оповещение о нужном пульсе во время тренировки;</li>
-                                <li>Вы увидите информативный графический индикатор целевых тренировочных зон пульса;</li>
-                                <li>Также Вы увидите информацию о расходе калорий за тренировку;</li>
-                                <li>Вы сможете посмотреть данные по 10 тренировкам.</li>
-                            </ul>
-                            <a href="#" class="catalog-item__link">НАЗАД</a>
-                        </div>
-                    </div>
-                    <hr>
-
-                    <div class="catalog-item__footer">
-                        <div class="catalog-item__prices">
-                            <div class="catalog-item__old-price">4 750 руб.</div>
-                            <div class="catalog-item__price">4 500 руб.</div>
-                        </div>
-                        <button class="button button_catalog">КУПИТЬ</button>
-                    </div>
-                </div>
+            <div class="ourWork__item">
+                <picture>
+                    <source type="image/webp" srcset="img/ourWork/ourWork_3.webp">
+                    <img src="img/ourWork/ourWork_3.png" alt="forward">
+                </picture>
+                <h4 class="ourWork__name">Мы всегда смотрим вперед</h4>
+                <p class="ourWork__text">Философия нашей компании, делать себя и своих партнеров по всему миру, успешными и богатыми. Поэтому мы всегда открыты к диалогу о партнерстве и инвестициях.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="feedback">
-        <div class="container">
-            <h2 class="title">отзывы клиентов</h2>
-            
-            <div class="feedback__item">
-                <img src="img/feedback_1.png" alt="" class="feedback__img">
-                <div class="feedback__content">
-                    <h3 class="feedback__name">Ирина Иванченко</h3>
-                    <div class="feedback__exp">2 полумарафона</div>
-                    <div class="feedback__text">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же. <br><br>
-                        Новые цели - новый гаджет! <br><br>
-                        Спасибо, RunSmart! </div>
-                </div>
+        <section class="agent" style="background-image: url('img/agent/bg-agent.jpg')">
+    <div class="container">
+        <div class="agent__img">
+            <picture>
+                <source type="image/webp" srcset="img/agent/person.webp">
+                <img src="img/agent/person.png" alt="agent">
+            </picture>
+        </div>
+        <h2 class="agent__title">Агент в Китае</h2>
+        <div class="agent__text">Русскоговорящие представители компании без труда найдут именно тот товар, который будет отвечать Вашим запросам как по качеству, так и по цене.</div>
+    </div>
+</section>
+
+        <section class="price" id="price">
+    <div class="container">
+        <h2 class="title">Цены на любой вариант доставки</h2>
+        <div class="divider"></div>
+        <div class="price__descr">Перевозки грузов на дальние расстояния без каких-либо ограничений.
+            Любой груз доставим вовремя. </div>
+        <div class="price__content">
+            <div class="price__item">
+                <h3 class="price__item-name">Доставка морем</h3>
+                <picture>
+                    <source type="image/webp" srcset="img/prices/price_sea.webp">
+                    <img src="img/prices/price_sea.png" alt="sea">
+                </picture>
+                <div class="price__item-duration">Доставка 35-50 дней</div>
+                <div class="price__item-money">от 0,3$ за 1 кг</div>
+                <div class="price__item-text">Морские перевозки грузов из Китая в Россию за 35 дней 
+                    с прохождением таможни </div>
+                    <button class="button price__button">Подробнее</button>
             </div>
-
-            <div class="feedback__item">
-                <img src="img/feedback_2.png" alt="" class="feedback__img">
-                <div class="feedback__content">
-                    <h3 class="feedback__name">Иван Сёмочкин</h3>
-                    <div class="feedback__exp">1 полумарафон</div>
-                    <div class="feedback__text">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал. <br> <br>
-                        Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд. <br> <br>
-                        С ними подготовился к своему первому полумарафону! Спасибо!!!
-                    </div>
-                </div>
+            <div class="price__item">
+                <h3 class="price__item-name">Ж/Д доставка</h3>
+                <picture>
+                    <source type="image/webp" srcset="img/prices/price_train.webp">
+                    <img src="img/prices/price_train.png" alt="train">
+                </picture>
+                <div class="price__item-duration">Доставка 15-28 дней</div>
+                <div class="price__item-money">от 1$ за 1 кг</div>
+                <div class="price__item-text">ЖД перевозки грузов из Китая в Россию от 2 недель 
+                    с прохождением таможни</div>
+                    <button class="button price__button">Подробнее</button>
             </div>
-
-            <div class="feedback__item">
-                <img src="img/feedback_3.png" alt="" class="feedback__img">
-                <div class="feedback__content">
-                    <h3 class="feedback__name">Юлия Дашкина</h3>
-                    <div class="feedback__exp">2 полумарафона</div>
-                    <div class="feedback__text">Долго не могла начать бегать, т.к. до этого несколько раз начинала, но становилось тяжело и я бросала. От друзей услышала о RunSmart и о беге с контролем пульса и решила попробовать. <br><br>
-                        Позвонила, ребята поинтересовались моими целями и подобрали очень интересный вариант со скидкой! Теперь бегаю и наслаждаюсь бегом! Пробежала уже 2 полумарафона и несколько более коротких забегов и не намерена останавливаться! <br><br>
-                        Спасибо!!!
-                    </div>
-                </div>
+            <div class="price__item">
+                <h3 class="price__item-name">Автодоставка</h3>
+                <picture>
+                    <source type="image/webp" srcset="img/prices/price_auto.webp">
+                    <img src="img/prices/price_auto.png" alt="auto">
+                </picture>
+                <div class="price__item-duration">Доставка 12-20 дня</div>
+                <div class="price__item-money">от 1$ за 1 кг</div>
+                <div class="price__item-text">Автоперевозки грузов из Китая в Россию от 2 недель 
+                    с прохождением таможни</div>
+                    <button class="button price__button">Подробнее</button>
+            </div>
+            <div class="price__item">
+                <h3 class="price__item-name">Авиа доставка</h3>
+                <picture>
+                    <source type="image/webp" srcset="img/prices/price_air.webp">
+                    <img src="img/prices/price_air.png" alt="air">
+                </picture>
+                <div class="price__item-duration">Доставка 1-12 дней</div>
+                <div class="price__item-money">от 6$ за 1 кг</div>
+                <div class="price__item-text">Авиаперевозки грузов из Китая в Россию до 2 недель 
+                    с прохождением таможни</div>
+                    <button class="button price__button">Подробнее</button>
             </div>
         </div>
-    </section>
 
-    <footer class="footer">
-        <div class="footer__info">
-            <div class="footer__address">Москва, Мясницкий проезд, д.3с1</div>
-            <a href="tel:84999228974" class="footer__phone">8 (499) 922-89-74</a>
-            <div class="footer__social">
-                <a href="#" class="footer__img">
-                    <img src="icons/facebook.svg" alt="">
-                </a>
-                <a href="#" class="footer__img">
-                    <img src="icons/insta.svg" alt="">
-                </a>
-                <a href="#" class="footer__img">
-                    <img src="icons/pinterest.svg" alt="">
-                </a>
+        <h3 class="price__consultation">Заказать бесплатную консультацию</h3>
+        <form action="#" class="price__form">
+            <div class="price__form-img">
+                <picture>
+                    <source type="image/webp" srcset="img/form_consultation.webp">
+                    <img src="img/form_consultation.png" alt="consultation">
+                </picture>
             </div>
-        </div>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A09432220900bedb75af35823fc7d2089c8c8be34fe508d5ec786b1f3cf4c7925&amp;source=constructor"></iframe>
-    </footer>
-
-    <div class="overlay">
-        <div class="modal" id="consultation">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Просто заполните форму заявки</div>
-            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
-            <form action="#" class="feed-form feed-form_mt25">
-                <input required name="name" type="text" placeholder="Ваше имя">
-                <input required name="phone" type="tel" placeholder="Ваш телефон">
-                <input required name="email" type="email" placeholder="Ваше E-mail">
-                <button class="button button_submit">Заказать консультацию</button>
-            </form>
-        </div>
+            <input type="text" class="price__form-input" placeholder="Ваше имя..." required>
+            <input type="tel" class="price__form-input" placeholder="Ваш номер телефона..." required>
+            <input type="email" class="price__form-input" placeholder="Ваш e-mail..." required>
+            <div class="price__form-btn">
+                <button class="button">Отправить заявку</button>
+            </div>
+        </form>
+    </div>
+</section>
         
-        <div class="modal" id="order">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Ваш заказ:</div>
-            <div class="modal__descr">Пульсометр Polar FT1</div>
-            <form action="#" class="feed-form feed-form_mt25">
-                <input required name="name" type="text" placeholder="Ваше имя">
-                <input required name="phone" type="tel" placeholder="Ваш телефон">
-                <input required name="email" type="email" placeholder="Ваше E-mail">
-                <button class="button button_submit">Купить</button>
-            </form>
+        <section class="agent" style="background-image: url('img/manager/bg-manager.jpg')">
+    <div class="container">
+        <div class="agent__img">
+            <picture>
+                <source type="image/webp" srcset="img/manager/managers.webp">
+                <img src="img/manager/managers.png" alt="agent">
+            </picture>
         </div>
+        <h2 class="agent__title">Менеджеры компании</h2>
+        <div class="agent__text">Подберут для Вас оптимальную схему грузоперевозки. Проведут контроль закупок, организуют прямые поставки от завода-изготовителя.</div>
+    </div>
+</section>
 
-        <div class="modal" id="thanks">
-            <div class="modal__close">&times;</div>
-            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
-            <div class="modal__descr">Наш менеджер свяжется с вами<br> в ближайшее время!</div>
+        <section class="scheme" id="scheme">
+    <div class="container">
+        <h2 class="title">Схема работы с нами</h2>
+
+        <div class="scheme__content">
+            <div class="scheme__item">
+                <picture>
+                    <source type="image/webp" srcset="img/scheme/application.webp">
+                    <img src="img/scheme/application.png" alt="application">
+                </picture>
+                <div class="scheme__name">Заявка</div>
+                <p class="scheme__descr">
+                    Вы оставляете заявку на нашем сайте или звоните нам
+                </p>
+            </div>
+            <div class="scheme__item">
+                <picture>
+                    <source type="image/webp" srcset="img/scheme/map.webp">
+                    <img src="img/scheme/map.png" alt="map">
+                </picture>
+                <div class="scheme__name">Аналитика доставки</div>
+                <p class="scheme__descr">
+                    Мы просчитываем варианты доставки Вашего груза
+                </p>
+            </div>
+            <div class="scheme__item">
+                <picture>
+                    <source type="image/webp" srcset="img/scheme/contract.webp">
+                    <img src="img/scheme/contract.png" alt="contract">
+                </picture>
+                <div class="scheme__name">Договор</div>
+                <p class="scheme__descr">
+                    Заключаем с Вами договор о поставке груза из Китая
+                </p>
+            </div>
+            <div class="scheme__item">
+                <picture>
+                    <source type="image/webp" srcset="img/scheme/stock.webp">
+                    <img src="img/scheme/stock.png" alt="stock">
+                </picture>
+                <div class="scheme__name">Доставка на наш склад</div>
+                <p class="scheme__descr">
+                    Связываемся с Вашим поставщиком в Китае и договариваемся о доставке груза на наш склад
+                </p>
+            </div>
+            <div class="scheme__item">
+                <picture>
+                    <source type="image/webp" srcset="img/scheme/check.webp">
+                    <img src="img/scheme/check.png" alt="checkup">
+                </picture>
+                <div class="scheme__name">Проверка груза</div>
+                <p class="scheme__descr">
+                    Мы проверяем, собираем и упаковываем перед отправкой Ваш груз на своём складе
+                </p>
+            </div>
+            <div class="scheme__item">
+                <picture>
+                    <source type="image/webp" srcset="img/scheme/delivery.webp">
+                    <img src="img/scheme/delivery.png" alt="delivery">
+                </picture>
+                <div class="scheme__name">Доставка груза</div>
+                <p class="scheme__descr">
+                    Мы перевозим ваш груз до места назначения и производим таможенную очистку
+                </p>
+            </div>
+            <div class="scheme__item">
+                <picture>
+                    <source type="image/webp" srcset="img/scheme/payment.webp">
+                    <img src="img/scheme/payment.png" alt="payment">
+                </picture>
+                <div class="scheme__name">Оплата</div>
+                <p class="scheme__descr">
+                    Оплачиваете доставку груза при получении
+                </p>
+            </div>
         </div>
     </div>
+</section>
+        <section class="slider" id="reviews">
 
-    <a href="#up" class="pageup">
-        <img src="icons/up.svg" alt="up">
-    </a>
+        <h2 class="title">отзывы наших клиентов</h2>
+        <div class="divider"></div>
+        <h3 class="slider__subtitle">Мы всегда стараемся помочь клиентам, что бы они обращались к нам снова</h3>
+        
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <picture>
+                        <source type="image/webp" srcset="img/reviews/olga.webp">
+                        <img src="img/reviews/olga.png" alt="olga">
+                    </picture>
+                    <div class="slider__name">
+                        Анисимова Ольга
+                    </div>
+                    <p class="slider__descr">
+                        Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source type="image/webp" srcset="img/reviews/olga.webp">
+                        <img src="img/reviews/olga.png" alt="olga">
+                    </picture>
+                    <div class="slider__name">
+                        Анисимова Ольга
+                    </div>
+                    <p class="slider__descr">
+                        Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source type="image/webp" srcset="img/reviews/olga.webp">
+                        <img src="img/reviews/olga.png" alt="olga">
+                    </picture>
+                    <div class="slider__name">
+                        Анисимова Ольга
+                    </div>
+                    <p class="slider__descr">
+                        Хочу рассказать о компании Global Opt. Самое главное что меня радует, это быстрый поиск и анализ определенного товара. Доставляла через компанию уже много раз, от расходных материалов для отеля, ло дольших партий детской одежды. Буду продолжать пользтваьбся услугами даной компании
+                    </p>
+                </div>
+            </div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev">&LeftAngleBracket;</div>
+            <div class="swiper-button-next">&RightAngleBracket;</div>
+        </div>
 
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+</section>
+        <section class="mainForm" id="contacts">
+    <div class="container">
+        <form action="#" class="mainForm__form">
+            <div class="mainForm__title">
+                Остались вопросы?<br>
+                <span>Напишите нам!</span>
+            </div>
+            <div class="mainForm__content">
+                <div class="mainForm__inputs">
+                    <input placeholder="Ваше имя..."text" class="mainForm__input">
+                    <input placeholder="Ваш номер телефона..." type="tel" class="mainForm__input">
+                    <input placeholder="Ваш e-mail..." type="email" class="mainForm__input">
+                </div>
+                <textarea placeholder="Сообщение..." name="message" id="message" class="mainForm__input"></textarea>
+                <button class="button mainForm__button">Отправить заявку</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+        <div class="map">
+            <iframe class="map__yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa8507bdef431073b7d7142f51f784a234094c9602a5c4eaf6d72a486e25d3dd4&amp;source=constructor" ></iframe>
+        </div>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="footer__top-left">
+                <a href="#">
+                    <picture>
+                        <source type="image/webp" srcset="img/footer/footer_logo.webp">
+                        <img src="img/footer/footer_logo.png" alt="logo">
+                    </picture>
+                </a>
+                <h2 class="footer__title">Global Opt - Доставка грузов из Китая в Россию и СНГ</h2>
+            </div>
+            <div class="footer__top-right">
+                <div class="footer__phone">
+                    Есть вопросы?
+                    <a href="tel:+79264230100">+7 (926) 423 01 00</a>
+                </div>
+                <button class="button footer__button">Перезвоните мне</button>
+            </div>
+        </div>
+        <div class="footer__divider"></div>
+
+        <div class="footer__bottom">
+            <a href="mailto:guchvlado324@gmail.com" class="footer__email">
+                guchvlado324@gmail.com
+            </a>
+            <a href="pages/policy.html" class="footer__policy">
+                Политика конфидециальности
+            </a>
+            <div class="footer__creator">
+                Создание сайта: Guchenko Vladislav
+            </div>
+        </div>
+    </div>
+</footer>
+        <script src="js/vendor.min.js"></script>
+        <script src="js/main.min.js"></script>
+    </body>
 </html>
